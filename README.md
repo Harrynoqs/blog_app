@@ -23,7 +23,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Blog App</b></h3>
 
 </div>
 
@@ -57,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[Blog-App]** This is a blog website that allows users to make comments, likes and posts.
+**[Blog-App]** I set up models. To start with, I have tables for Users, Posts, Comments, and Likes, which means I need a model for each one. I have already set the foreign key in the table schema.
 
 ## 🛠 Built With <a name="built-with"></a>
 
