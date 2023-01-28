@@ -17,4 +17,9 @@ RSpec.describe User, type: :model do
     user.Name = nil
     expect(user).to_not be_valid
   end
+
+  it 'Has a latest_posts method' do
+    user = User.new(Name: 'Harry', PostCounter: 9)
+    expect(user).to respond_to(:latest_posts)
+  end
 end
