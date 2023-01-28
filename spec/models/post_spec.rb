@@ -31,6 +31,6 @@ RSpec.describe Post, type: :model do
 
   it 'Has a latest_comments method' do
     post = Post.new(Title: 'this is a post', CommentCounter: 5, LikeCounter: 10)
-    expect(subject).to respond_to(:latest_comments)
+    expect(post).to respond_to(:latest_comments)
   end
 end
