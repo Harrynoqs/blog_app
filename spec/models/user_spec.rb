@@ -17,5 +17,4 @@ RSpec.describe User, type: :model do
     user.Name = nil
     expect(user).to_not be_valid
   end
-
 end
