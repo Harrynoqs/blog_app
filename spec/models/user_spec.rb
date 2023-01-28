@@ -11,4 +11,11 @@ RSpec.describe User, type: :model do
     user.PostCounter = -10
     expect(user).to_not be_valid
   end
+
+  it 'Name should be present' do
+    user = User.create(Name: 'John', Image: 'https://unsplash.com/photos/F_-0BxGuVvo', Bio: 'anything')
+    user.Name = nil
+    expect(user).to_not be_valid
+  end
+
 end
