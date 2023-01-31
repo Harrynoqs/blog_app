@@ -1,30 +1,5 @@
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-
-  <h3><b>Blog App</b></h3>
-
+<div align="center">
+  <h3><b>BLOG README</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -48,37 +23,60 @@ After you're finished please remove all the comments and instructions!
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog-App] <a name="about-project"></a>
+# 📖 BLOG <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Blog-App]** In this project, I added validations to the models and create specs for them.
+**BLOG ** is a classic example of a blog website. A user will be able to login into the application (Credentials: Username and Password). The logged in user can create posts. These posts will be listed and readers of these posts will be empowered to interact with the posts by either adding comments or even liking the posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
+
 <details>
   <summary>Client</summary>
- </details>
+  <ul>
+    <li><a href="https://guides.rubyonrails.org/engines.html">Embbed Ruby (ERB)</a></li>
+  </ul>
+</details>
 
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[Make post]**
-- **[Make comments]**
-- **[Make likes]**
+- **Log into the application**
+- **Create a post for the application users**
+- **Interact with the posts (Like post or comment on Post)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+<!--
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -91,69 +89,44 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-
-- Ruby
-- Ruby on Rails
-- Gitflow
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+ - Ruby and rails installed
+- PostgreSQL server installed also
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  mkdir blog-app
+  cd blog-app
+  git clone git@github.com:inspecta/Blog.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
+  cd Blog
   gem install
-```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   rails server
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
   bin/rails test test/models/article_test.rb
 ```
---->
 
+<!--
 ### Deployment
 
 You can deploy this project using:
