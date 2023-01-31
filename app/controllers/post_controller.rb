@@ -1,5 +1,4 @@
 class PostController < ApplicationController
-
   def index
     puts :posts
   end

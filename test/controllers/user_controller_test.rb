@@ -1,7 +1,7 @@
-require "test_helper"
+require 'test_helper'
 
 class UserControllerTest < ActionDispatch::IntegrationTest
-  test "should get view" do
+  test 'should get view' do
     get user_view_url
     assert_response :success
   end
