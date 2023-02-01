@@ -158,6 +158,14 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe features you will add to the project.
+
+- [ ] **[Likes for comments]**
+- [ ] **[Images for commenters]**
+
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
