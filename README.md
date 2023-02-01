@@ -30,7 +30,9 @@
 
 # 📖 BLOG <a name="about-project"></a>
 
-**BLOG ** is a classic example of a blog website. A user will be able to login into the application (Credentials: Username and Password). The logged in user can create posts. These posts will be listed and readers of these posts will be empowered to interact with the posts by either adding comments or even liking the posts.
+**BLOG ** is a classic example of a blog website. A user will be able to login into the application (Credentials: Username and Password). The logged in user can create posts. These posts will be listed and readers of these posts will be empowered to interact with the posts by either adding comments or even liking the posts. 
+
+I set up tests on the controllers I recently added to your Blog app.
 
 ## 🛠 Built With <a name="built-with"></a>
 
