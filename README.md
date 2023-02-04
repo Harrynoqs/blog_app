@@ -218,7 +218,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Harrynoqs/blog_app/blob/dev/README.md) licensed.
+This project is [MIT](https://github.com/Harrynoqs/blog_app/blob/views/LICENSE.md) licensed.
 
 NOTE: we recommend using the MIT license - you can set it up quickly by using templates available on GitHub. You can also use any other license if you wish.
 
