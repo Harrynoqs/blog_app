@@ -34,6 +34,8 @@
 
 I set up tests on the controllers I recently added to your Blog app.
 
+I added the Views associated with the Models and Controllers for the Blog App.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
