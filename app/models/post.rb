@@ -1,20 +1,20 @@
 class Post < ApplicationRecord
   after_create :update_posts_counter
-  has_many :comments
+  belongs_to :author, class_name: 'User', foreign_key: :author_id
   has_many :likes
-  belongs_to :author, class_name: 'User'
+  has_many :comments
 
   def update_posts_counter
-    User.find_by(name: author.name).increment!(:posts_counter)
+    author_id = author.id
+    User.increment_counter(:posts_counter, author_id)
   end
 
-  def latest_comments
+  def recent_comments
     comments.order(created_at: :desc).limit(5)
   end
 
-  after_save :update_posts_counter
-
-  validates :Title, presence: true, length: { maximum: 250 }
-  validates :CommentCounter, numericality: { greater_than_or_equal_to: 0 }
-  validates :LikeCounter, numericality: { greater_than_or_equal_to: 0 }
+  validates :title, presence: true
+  validates :title, length: { maximum: 250 }
+  validates :comments_counter, comparison: { greater_than_or_equal_to: 0 }
+  validates :likes_counter, comparison: { greater_than_or_equal_to: 0 }
 end
