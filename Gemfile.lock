@@ -89,6 +89,8 @@ GEM
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
     erubi (1.12.0)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
     globalid (1.0.1)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -126,8 +128,11 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
+    nokogiri (1.14.0-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.14.0-x64-mingw32)
       racc (~> 1.4)
+    pg (1.4.5-x64-mingw-ucrt)
     pg (1.4.5-x64-mingw32)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -230,12 +235,14 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  x64-mingw-ucrt
   x64-mingw32
 
 DEPENDENCIES
   bootsnap
   capybara
   debug
+  faker
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -252,7 +259,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.0.5p211
+   ruby 3.1.3p185
 
 BUNDLED WITH
    2.2.33
