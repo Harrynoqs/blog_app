@@ -10,8 +10,8 @@ class PostsController < ApplicationController
     user_id = params[:user_id]
     post_id = params[:id]
     @user = User.find(user_id)
-    @post = Post.find(post_id)
-    @comments = Comment.where(post_id:)
+    @post = Post.find(post_id)    
+    @comments = Comment.where(post_id: params[:id])
     @recent_user = current_user
   end
 
