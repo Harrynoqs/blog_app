@@ -42,7 +42,7 @@ button {
   cursor: pointer;
 }
 
-  /* USERS PAGE */
+/* USERS PAGE */
 .users-list {
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ article {
 .user-info {
   display: flex;
   align-items: center;
-  gap: 20px;    
+  gap: 20px;
 }
 
 .bio_section,
