@@ -1,19 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
+/* stylelint-disable */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +7,7 @@
 }
 
 img {
-  width: 100%;
+  width: 150px;
   height: auto;
 }
 
@@ -50,10 +35,10 @@ button {
 }
 
 .user-card,
-.bio_section,
-.posts_section,
+.bio-section,
+.posts-section,
 article {
-  padding: 5rem;
+  padding: 20px;
 }
 
 .user-card {
@@ -63,27 +48,27 @@ article {
 }
 
 .profile-picture {
-  width: 20rem;
-  height: 12.5rem;
+  width: 150px;
+  height: 100px;
   border-radius: 50%;
 }
 
 .user-info {
   display: flex;
-  align-items: center;
   gap: 20px;
+  align-items: center;
 }
 
-.bio_section,
-.posts_section {
+.bio-section,
+.posts-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.posts_list,
-.posts_container,
-.comments_section {
+.posts-list,
+.posts-container,
+.comments-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -95,7 +80,7 @@ article {
   font-weight: 700;
 }
 
-.comments_list {
+.comments-list {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -122,6 +107,22 @@ article {
 .main-post > div {
   display: flex;
   justify-content: space-between;
-  gap: 2.5rem;
+  gap: 20px;
   align-items: center;
+}
+
+
+form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+textarea,
+input {
+  border: 1px solid rgb(168, 158, 250);
+  padding: 10px;
+  width: 100%;
 }
