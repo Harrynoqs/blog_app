@@ -14,18 +14,18 @@
  *= require_self
  */
 
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
-  
+
 img {
   width: 100%;
   height: auto;
 }
-  
+
 body {
   padding: 49px;
   display: flex;
@@ -41,46 +41,46 @@ button {
   border: none;
   cursor: pointer;
 }
-  
+
   /* USERS PAGE */
 .users-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-  
+
 .user-card,
 .bio_section,
 .posts_section,
 article {
   padding: 5rem;
 }
-  
+
 .user-card {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-  
+
 .profile-picture {
   width: 20rem;
   height: 12.5rem;
   border-radius: 50%;
 }
-  
+
 .user-info {
   display: flex;
   align-items: center;
   gap: 20px;    
 }
-  
+
 .bio_section,
 .posts_section {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-  
+
 .posts_list,
 .posts_container,
 .comments_section {
@@ -88,37 +88,37 @@ article {
   flex-direction: column;
   gap: 20px;
 }
-  
+
 .post-counters {
   width: fit-content;
   align-self: flex-end;
   font-weight: 700;
 }
-  
+
 .comments_list {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-  
+
 .comment-author {
   text-decoration: underline;
   font-weight: 600;
 }
-  
+
 article {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
 }
-  
+
 .main-post {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-  
+
 .main-post > div {
   display: flex;
   justify-content: space-between;
