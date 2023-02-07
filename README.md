@@ -38,6 +38,8 @@ I added the Views associated with the Models and Controllers for the Blog App.
 
 I added forms to the Blog app.
 
+I created integration tests for all of the views used in the project. I covered the user stories (or user workflows) that I want my users to experience while taking into consideration the possible errors my users may cause.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
