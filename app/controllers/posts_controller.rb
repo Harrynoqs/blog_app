@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   def show
     user_id = params[:user_id]
     post_id = params[:id]
-    @user = User.find(user_id)
+    @user = User.includes(posts: { comments: [:author] }).find(user_id)
     @post = Post.find(post_id)
     @comments = Comment.where(post_id: params[:id])
     @recent_user = current_user
