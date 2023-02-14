@@ -8,10 +8,11 @@ class PostsController < ApplicationController
 
   def show
     user_id = params[:user_id]
-    # post_id = params[:post_id]
+    post_id = params[:id]
     @user = User.includes(posts: { comments: [:author] }).find(user_id)
-    @posts = @user.posts
+    @post = @user.posts.includes(:comments).find(post_id)
     @recent_user = current_user
+    @comments = @post.comments
   end
 
   def new
