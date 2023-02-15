@@ -5,6 +5,12 @@ ruby '3.1.3'
 
 gem 'tzinfo-data'
 
+# Gemfile devise
+gem 'devise', '~> 4.8'
+
+#mail helper
+gem 'letter_opener'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
 
