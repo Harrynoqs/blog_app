@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
   def index
     user_id = params[:user_id]
-    @user = User.find(user_id)
-    @posts = Post.where(author_id: user_id)
+    @user = User.includes(posts: { comments: [:author] }).find(user_id)
+    @posts = @user.posts
     @recent_user = current_user
   end
 
@@ -10,9 +10,9 @@ class PostsController < ApplicationController
     user_id = params[:user_id]
     post_id = params[:id]
     @user = User.includes(posts: { comments: [:author] }).find(user_id)
-    @post = Post.find(post_id)
-    @comments = Comment.where(post_id: params[:id])
+    @post = @user.posts.includes(:comments).find(post_id)
     @recent_user = current_user
+    @comments = @post.comments
   end
 
   def new
