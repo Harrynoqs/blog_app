@@ -126,8 +126,11 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
+    nokogiri (1.14.0-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.14.0-x64-mingw32)
       racc (~> 1.4)
+    pg (1.4.5-x64-mingw-ucrt)
     pg (1.4.5-x64-mingw32)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -230,6 +233,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  x64-mingw-ucrt
   x64-mingw32
 
 DEPENDENCIES
@@ -252,7 +256,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.0.5p211
+   ruby 3.1.3p185
 
 BUNDLED WITH
    2.2.33
